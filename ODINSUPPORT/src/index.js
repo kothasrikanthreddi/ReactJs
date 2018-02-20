@@ -10,6 +10,8 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import rootReducer from "./rootReducer";
 import { userLoggedIn } from './actions/auth';
+import Bootstrap from "bootstrap/dist/css/bootstrap.css";
+
 
 const store = createStore(rootReducer,composeWithDevTools(applyMiddleware(thunk)));
 

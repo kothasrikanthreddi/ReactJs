@@ -4,6 +4,10 @@ import { connect } from "react-redux";
 import LoginForm from "../forms/LoginForm";
 import { login } from "../../actions/auth";
 
+
+
+
+
 class LoginPage extends React.Component {
   submit = data =>
     this.props.login(data).then(() => this.props.history.push("/dashboard"));
@@ -14,6 +18,8 @@ class LoginPage extends React.Component {
         <h1>Login page</h1>
 
         <LoginForm submit={this.submit} />
+
+       
       </div>
     );
   }
